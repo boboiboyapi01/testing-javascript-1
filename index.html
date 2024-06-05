@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>donasinya banh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@700&family=Oswald&display=swap"
+    rel="stylesheet">
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #7CFC00, #00FF00, #EE7752, #E73C7E, #23A6D5, #23D5AB, #FFFF00);
+    background-size: 300% 300%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 50%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 50%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%
+    }
+
+    50% {
+      background-position: 100% 50%
+    }
+
+    100% {
+      background-position: 0% 50%
+    }
+  }
+
+  #root {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    height: 22em;
+    width: 20em;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    z-index: 10;
+
+  }
+
+  #lamanPertama {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .gopher {
+    background: url(saitama1\ -\ Copy\ \(1\).png);
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    margin-bottom: 25px;
+    z-index: -1;
+  }
+
+  .eyes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-left: 20px;
+  }
+
+  .eye {
+    width: 24px;
+    height: 13px;
+    border-radius: 50%;
+    float: left;
+    margin: 18px;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .eye2 {
+    width: 22px;
+    height: 14px;
+    border-radius: 5px 5px 10px 10px;
+    float: left;
+    margin: 26px;
+    margin-left: 13px;
+    margin-top: 12px;
+    text-align: center;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .ball {
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+  }
+
+  .firstGreeting {
+    margin-top: -70px;
+    margin-bottom: 19px;
+  }
+
+  #firstQuestion {
+    z-index: 1;
+  }
+
+  .input {
+    height: 15em;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -114px;
+  }
+
+  input {
+    background: transparent;
+    width: 300px;
+    height: 35px;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.651);
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  input:focus {
+    background: transparent;
+  }
+
+  input::after {
+    background: transparent;
+  }
+
+  button {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: #0447c2;
+    border: 1px solid white;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+
+  button:hover {
+    background-color: #3060b8;
+  }
+
+  button:active {
+    background-color: #0447c296;
+  }
+</style>
+
+<body>
+  <div id="root">
+    <div class="container">
+      <div id="lamanPertama">
+        <div class="firstGreeting">
+          <p id="firstQuestion" style="font-size:1.5em;">apakah anda ingin berdonasi?</p>
+        </div>
+        <div class="gopher">
+          <!-- <img src="saitama1.png" style="width: 240px; height: 240px;" id="saitama" /> -->
+          <div class="eyes">
+            <div class="eye">
+              <div class="ball"></div>
+              <!-- <img src="black-dot1.jpg"
+                            style="top: 95px; left: 95px; width: 11px; height: 11px; border-radius:1px;" /> -->
+            </div>
+            <div class="eye2">
+              <div class="ball"></div>
+              <!-- <img src="black-dot1.jpg"
+                            style="top: 87px; left: 147px;; width: 11px; height: 11px; border-radius: 1px;" /> -->
+            </div>
+          </div>
+        </div>
+        <div id="inputan" class="input">
+          <input type="text" placeholder="Masukkan nama" id="usernameInput" class="nama" required>
+          <p style="align-self: flex-start">Jumlah Donasi</p>
+          <input type="number" placeholder="Minimal 20000" id="donasiInput" class="">
+          <button style="align-self:flex-end; margin-top: 18px;" onclick="onClick()">kirimkan
+            donasi</button>
+        </div>
+      </div>
+      <div id="lamanKedua" style="display:none; width:100%; height:100%;"></div>
+    </div>
+  </div>
+  <script type="application/javascript">
+
+    // document.addEventListener('mousemove', (e) => {
+    //     console.log(e)
+
+    //     const mouseX = e.clientX;
+    //     const mouseY = e.clientY;
+
+    //     const anchor = document.getElementById('saitama')
+    //     const rect = anchor.getBoundingClientRect();
+    //     const anchorX = rect.letf + rect.width / 2;
+    //     const anchorY = rect.top + rect.height / 2;
+
+    //     const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+    //     console.log(angleDeg)
+
+    //     const eyes = document.querySelectorAll('.eye')
+    //     eyes.forEach(eye => {
+    //         eye.style.transfrom = `rotate(${90 + angleDeg}deg)`;
+    //     })
+    // })
+
+    // function angle(cx, cy, ex, ey) {
+    //     const dy = ey - cy;
+    //     const dx = ex - cx;
+    //     const rad = Math.atan2(dy, dx);
+    //     const deg = rad * 180 / Math.PI;
+    //     return deg;
+    // }
+
+    let ball = document.getElementsByClassName('ball')
+    document.onmousemove = function () {
+      let x = event.clientX * 100 / window.innerWidth + "%";
+      let y = event.clientY * 70 / window.innerHeight + "%";
+
+      for (var i = 0; i < 2; i++) {
+        ball[i].style.left = x / 2;
+        ball[i].style.top = y / 2;
+        ball[i].style.transform = "translate(" + x + "," + y + ")";
+
+      }
+    }
+
+    const usernameInput = document.getElementById('usernameInput')
+    const donasiInput = document.getElementById('donasiInput')
+    const lamanPertama = document.getElementById('lamanPertama')
+    const lamanKedua = document.getElementById('lamanKedua')
+
+
+
+    function onClick() {
+      if (donasiInput.value >= 20000 && usernameInput.value != "") {
+        lamanKedua.innerHTML = "terima kasih " + usernameInput.value;
+        lamanPertama.style.display = "none";
+        lamanKedua.style.display = "block";
+        lamanKedua.style.display = "flex";
+        lamanKedua.style.justifyContent = "center";
+        lamanKedua.style.alignItems = "center";
+      } else {
+        alert('heh! niat donasi ga sih?');
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>
